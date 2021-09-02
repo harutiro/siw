@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+    <title></title>
+    <!--<link rel="stylesheet" type='text/css' href="./public/css/style.css">-->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Satisfy|Stoke|Yellowtail|Geo|Oswald|Lobster" rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapiAs.com/css2?family=Kosugi&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="editBackImage">
+    <div class="container-fluid p-2 d-flex justify-content-center">
+    <div class="card col-lg-6 p-5 border-3">
+    <form action="/renew/<%= @content.id %>" method="post" enctype="multipart/form-data">
+      
+        <div class="form-group">
+            <label for="title">アプリ名</label>
+            <input type="text" name="main_title" id="main_title" class="form-control" value="<%= @content.main_title %>">
+        </div>
+        <!--<div>-->
+        <!--    <label for="price">アプリアイコン</label>-->
+        <!--    <p><input type="file" name="app_icon" class="form-control-file" /></p>-->
+        <!--</div> -->
+        <div class="form-group">
+            <label for="price">サブタイトル</label>
+            <input type="text" name="sub_title" id="sub_title" class="form-control" value="<%= @content.sub_title %>">
+        </div>
+        <div class="form-group">
+            <label for="price">メッセージ</label>
+            <input type="text" name="message" id="message" class="form-control" value="<%= @content.message %>">
+        </div>
+        <!--<div>-->
+        <!--    <label for="price">紹介画像</label>-->
+        <!--    <p><input type="file" name="image" class="form-control-file" /></p>-->
+        <!--</div> -->
+        <div class="form-group">
+            <label for="price">公式ページURL</label>
+            <input type="text" name="url" id="url" class="form-control" value="<%= @content.url %>">
+        </div>
+        <div class="form-group">
+            <label for="price">ユーザー名</label>
+            <input type="text" name="user_name" id="user_name" class="form-control" value="<%= @content.user_name %>">
+        </div>
+        <div>
+            <label for="price">ユーザーアイコン</label>
+            <p><input type="file" name="user_icon" class="form-control-file" /></p>
+        </div>  
+        <div class="form-group">
+            <label for="price">パスワード</label>
+            <input type="text" name="pass" id="pass" class="form-control" value="<%= @content.pass %>">
+        </div>
+        
+        <p>( TДT)ｺﾞﾒﾝﾖｰOSの再選択は現在できません</p>
+        
+        <!--<div class="container my-3">-->
+        <!--    <div class="form-check form-check-inline">-->
+        <!--        <input class="form-check-input" name="windows" type="checkbox" id="windows" value=ture>-->
+        <!--        <label class="form-check-label" for="inlineCheckbox1">Windows</label>-->
+        <!--    </div>-->
+        <!--    <div class="form-check form-check-inline">-->
+        <!--      　<input class="form-check-input" name="mac" type="checkbox" id="mac" value=true>-->
+        <!--        <label class="form-check-label" for="inlineCheckbox2">Mac</label>-->
+        <!--    </div>-->
+        <!--    <div class="form-check form-check-inline">-->
+        <!--        <input class="form-check-input" name="linux" type="checkbox" id="linux" value=true>-->
+        <!--    　  <label class="form-check-label" for="inlineCheckbox3">Linux</label>-->
+        <!--    </div>-->
+        <!--</div>-->
+          
+        <div class="like">  
+        <div class="form-group">
+            <label for="category">カテゴリー</label>
+            <select name="category" class="form-control">
+              <% @categories.each do |category|%>
+                <option value="<%= category.id %>"> <%= category.name %> </option>
+              <% end %>
+            </select>
+        </div>
+        </div>
+      
+        <input type="submit" value="編集" class="btn btn-dark float-right mt-2">
+    </form>
+    </div>
+    </div>
+    </div>
+    
+</body>
+</html>
