@@ -10,6 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_08_21_051858) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "contributions", force: :cascade do |t|
+    t.string "app_icon"
+    t.string "main_title"
+    t.string "sub_title"
+    t.string "user_icon"
+    t.string "user_name"
+    t.string "img"
+    t.boolean "winos"
+    t.boolean "macos"
+    t.boolean "linuxos"
+    t.string "message"
+    t.string "url"
+    t.integer "like"
+    t.integer "category_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "pass"
+  end
 
 end
