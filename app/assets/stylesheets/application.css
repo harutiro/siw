@@ -1,15 +1,321 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+
+:root {
+    --yohaku: 20px;
+}
+
+body {
+    font-family: 'Kosugi', sans-serif;
+    height: 100%;
+}
+
+/*==================================ヘッター======================================*/
+
+.backImage {
+    background-image: url("/img/formImage.jpg");
+}
+
+.editBackImage{
+    background-image: url("/img/formImage.jpg");
+    height:100vh;
+}
+
+h1 {
+    color: #000044;
+    font-size: 90px;
+    font-family: lobster;
+    text-align: center;
+    padding-top: 0px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0px;
+}
+
+header {
+    background: url(/img/s-003.png) center / cover;
+    width: 100%;
+    height: 325px;
+    padding-top: 150px;
+}
+
+header p{
+    text-align: center;
+    font-size: 20px;
+}
+
+/*=======================================上のバー======================================*/
+
+nav {
+    background-color: #009B6B;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+}
+
+nav ul {
+    float: right;
+    text-align: right;
+}
+
+.name {
+    color: #e6eef6;
+    float: left;
+    margin: 0px;
+    margin-top: 8px;
+    margin-left: 30px;
+    font-size: 30px;
+
+}
+
+nav p{
+    
+    color: #e6eef6;
+    float:left;
+    margin-top: 0px;
+    margin-left: var(--yohaku);
+    
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 25px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffcc11;
+}
+
+/*==================================使いまわし系================================*/
+
+.title {
+    font-size: 30px;
+    border-left-style: solid;
+    border-left-width: 10px;
+    padding-left: 15px;
+    margin-bottom: 50px;
+}
+
+/*==================================紹介文======================================*/
+
+.intro {
+    background-color: #EBF7F7;
+    padding: 30px;
+    height: 500px;
+
+}
+
+.intro h2 {
+    border-color: #F9C15F;
+    color: #009B6B;
+}
+
+.intro p {
+    height: 100px;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 90px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.intro img {
+    float: right;
+}
+
+/*=======================================紹介部分================================*/
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    margin-top: var(--yohaku);
+    padding: 0px;
+    background-color: #FEFEFE;
+    height: 600px;
+    width: 450px;
+    margin-left: var(--yohaku);
+    box-shadow: 5px 5px 20px #999999;
+    border-radius: 20px;
+}
+
+.box-first {
+    height: 60px;
+    width: 100%;
+}
+
+.box-first img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+    margin-left: var(--yohaku);
+    margin-top: var(--yohaku);
+    float: left;
+    box-shadow: 1px 2px 8px #999999;
+}
+
+.box-first div {
+    float: left;
+    margin-left: var(--yohaku);
+}
+
+.box-first p {
+    margin: 0px;
+    margin-top: 7px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.box-first h3 {
+    margin: 0px;
+    margin-top: 23px;
+    font-size: 23px;
+}
+
+.box-second {
+    margin-top: var(--yohaku);
+    width: 450px;
+    height: 200px;
+    object-fit: cover
+}
+.box-center{
+    height: 70px;
+}
+
+.box-center img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+    margin-left: var(--yohaku);
+    margin-top: var(--yohaku);
+    float: left;
+    box-shadow: 1px 2px 8px #999999;
+}
+
+.box-center-name{
+    float:left;
+    margin-left:  var(--yohaku);
+}
+
+.box-center-name p{
+    margin: 0px;
+    margin-top: 23px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.box-center-name h3{
+    margin: 0px;
+    margin-top: 8px;
+    
+}
+
+.box-center-icon{
+    float:right;
+    margin-right: var(--yohaku);
+}
+
+.box-center-icon p{
+    margin: 0px;
+    margin-top: 23px;
+    margin-left: 23px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.box-center-icon img{
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.box-third {}
+
+.box-third p {
+    margin: var(--yohaku);
+    height: 130px;
+    font-size: 14px;
+}
+
+.box-button {
+    /*    背景*/
+    background: #f9f9f9;
+    /*    文字の色*/
+    color: #ff4c4c;
+    /*    文字のサイズ*/
+    font-size: 12px;
+    /*    枠線の太さ　先の種類　線の色*/
+    border: 1px solid #ff4c4c;
+
+    /*    枠線の感覚*/
+    padding: 8px;
+    /*    テキストにつく線の種類*/
+    text-decoration: none;
+    /*    角丸の半径*/
+    border-radius: 8px;
+
+    margin-left: var(--yohaku);
+}
+
+.box-button:hover {
+    background: #ff4c4c;
+    color: #f9f9f9;
+
+    /*    ふわっとするアニメーション*/
+    transition: 1s;
+}
+
+
+
+
+
+.free {
+    padding: 30px;
+    background-color: #E6EEF6;
+}
+
+.free h2 {
+    color: #009B6B;
+    border-color: #F9C15F;
+}
+
+.todo {
+    padding: 30px;
+    background-color: #E6EEF6;
+    padding-bottom: 150px;
+}
+
+.todo h2 {
+    color: #009B6B;
+    border-color: #F9C15F;
+}
+
+
+/*=========================================フッター===============================*/
+
+footer {
+    text-align: center;
+    background-color: #009B6B;
+    color: #E6EEF6;
+    height: 50px;
+
+}
+
