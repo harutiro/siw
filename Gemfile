@@ -2,7 +2,17 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.3'
-gem 'test-unit'
+
+gem 'activerecord', '~> 6.1'
+gem 'bcrypt', '~> 3.1'
+gem 'cloudinary', '~> 1.18'
+gem 'dotenv', '~> 2.7'
+gem 'pg', '~> 1.2'
+gem 'rake', '~> 13.0'
+gem 'sinatra', '~> 2.1'
+gem 'sinatra-activerecord', '~> 2.0'
+gem 'sinatra-contrib', '~> 2.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 # Use sqlite3 as the database for Active Record
