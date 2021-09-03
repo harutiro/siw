@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_21_051858) do
+ActiveRecord::Schema.define(version: 2021_09_03_142429) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2021_08_21_051858) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "contributions", force: :cascade do |t|
+  create_table "items", force: :cascade do |t|
     t.string "app_icon"
     t.string "main_title"
     t.string "sub_title"
@@ -32,9 +32,9 @@ ActiveRecord::Schema.define(version: 2021_08_21_051858) do
     t.string "url"
     t.integer "like"
     t.integer "category_id"
+    t.string "pass"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "pass"
   end
 
 end

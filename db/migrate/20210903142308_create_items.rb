@@ -1,6 +1,6 @@
-class CreateContributions < ActiveRecord::Migration[6.1]
+class CreateItems < ActiveRecord::Migration[6.1]
   def change
-    create_table :contributions do |t|
+    create_table :items do |t|
       t.string :app_icon
       t.string :main_title
       t.string :sub_title
@@ -14,6 +14,7 @@ class CreateContributions < ActiveRecord::Migration[6.1]
       t.string :url
       t.integer :like
       t.integer :category_id
+      t.string :pass
       t.timestamps null: false
     end
   end

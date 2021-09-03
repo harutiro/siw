@@ -2,7 +2,7 @@ class IndexController < ApplicationController
     protect_from_forgery
 
     def top
-        @contributions = Contribution.all
+        @contributions = Item.all
         @categories = Category.all
     end
 
@@ -31,7 +31,7 @@ class IndexController < ApplicationController
         #     img_url = upload['url']
         # end
 
-        Contribution.create({
+        Item.create({
             main_title: params[:main_title],
             sub_title: params[:sub_title],
             user_name: params[:user_name],

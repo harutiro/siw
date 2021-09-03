@@ -7,8 +7,8 @@ if Category.count == 0
     ])
 end
 
-if Contribution.count == 0
-    Contribution.create([
+if Item.count == 0
+    Item.create([
         
         
                         # WEB系＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
