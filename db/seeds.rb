@@ -13,11 +13,11 @@ if Item.count == 0
         
                         # WEB系＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
                         
-                        {app_icon: "/img/figma/icon.PNG",
+                        {app_icon: "/assets/figma/icon.PNG",
                         main_title: "figma",
                         sub_title:  "UI作成サイト",
-                        img:        "/img/figma/intr.png",
-                        user_icon:  "/img/user/nino.jpg",
+                        img:        "/assets/figma/intr.png",
+                        user_icon:  "/assets/user/nino.jpg",
                         user_name:  "にのさん",
                         winos:      true,
                         macos:      true,
@@ -33,11 +33,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/figma/icon.PNG",
+                        {app_icon: "/assets/figma/icon.PNG",
                         main_title: "Neumorphism.io",
                         sub_title:  "デザイン作成補助ツール",
-                        img:        "/img/figma/intr.png",
-                        user_icon:  "/img/user/apple.jpg",
+                        img:        "/assets/figma/intr.png",
+                        user_icon:  "/assets/user/apple.jpg",
                         user_name:  "あっぷるさん",
                         winos:      true,
                         macos:      true,
@@ -54,11 +54,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/figma/icon.PNG",
+                        {app_icon: "/assets/figma/icon.PNG",
                         main_title: "ICOGRAMS",
                         sub_title:  "立体的なデザイン作成補助ツール",
-                        img:        "/img/figma/intr.png",
-                        user_icon:  "/img/user/apple.jpg",
+                        img:        "/assets/figma/intr.png",
+                        user_icon:  "/assets/user/apple.jpg",
                         user_name:  "あっぷるさん",
                         winos:      true,
                         macos:      true,
@@ -73,11 +73,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/figma/icon.PNG",
+                        {app_icon: "/assets/figma/icon.PNG",
                         main_title: "colourco.de",
                         sub_title:  "直観であなたの欲しかった色を見つけます！",
-                        img:        "/img/figma/intr.png",
-                        user_icon:  "/img/user/moka.jpg",
+                        img:        "/assets/figma/intr.png",
+                        user_icon:  "/assets/user/moka.jpg",
                         user_name:  "モカさん",
                         winos:      true,
                         macos:      true,
@@ -94,11 +94,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/figma/icon.PNG",
+                        {app_icon: "/assets/figma/icon.PNG",
                         main_title: "Generate blobs",
                         sub_title:  "よくある水玉模様をつくっちゃうソフト",
-                        img:        "/img/figma/intr.png",
-                        user_icon:  "/img/user/apple.jpg",
+                        img:        "/assets/figma/intr.png",
+                        user_icon:  "/assets/user/apple.jpg",
                         user_name:  "あっぷるさん",
                         winos:      true,
                         macos:      true,
@@ -115,11 +115,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/figma/icon.PNG",
+                        {app_icon: "/assets/figma/icon.PNG",
                         main_title: "英英辞典",
                         sub_title:  "英語の単語を簡単調べるウェブ一覧",
-                        img:        "/img/figma/intr.png",
-                        user_icon:  "/img/user/ryou2.jpg",
+                        img:        "/assets/figma/intr.png",
+                        user_icon:  "/assets/user/ryou2.jpg",
                         user_name:  "りょうさん",
                         winos:      true,
                         macos:      true,
@@ -133,11 +133,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/figma/icon.PNG",
+                        {app_icon: "/assets/figma/icon.PNG",
                         main_title: "duolingo",
                         sub_title:  "隙間時間に勉強する英語サイト",
-                        img:        "/img/figma/intr.png",
-                        user_icon:  "/img/user/ron.jpg",
+                        img:        "/assets/figma/intr.png",
+                        user_icon:  "/assets/user/ron.jpg",
                         user_name:  "ろんさん",
                         winos:      true,
                         macos:      true,
@@ -159,11 +159,11 @@ if Item.count == 0
         
                         # 無料＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
                         
-                        {app_icon: "/img/figma/icon.PNG",
+                        {app_icon: "/assets/figma/icon.PNG",
                         main_title: "CamScanner",
                         sub_title:  "紙書類の電子化だけじゃない。無料でPDF編集も可能",
-                        img:        "/img/figma/intr.png",
-                        user_icon:  "/img/user/nyan2.jpg",
+                        img:        "/assets/figma/intr.png",
+                        user_icon:  "/assets/user/nyan2.jpg",
                         user_name:  "にゃんちゅうさん",
                         winos:      false,
                         macos:      false,
@@ -178,11 +178,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/figma/icon.PNG",
+                        {app_icon: "/assets/figma/icon.PNG",
                         main_title: "Everything",
                         sub_title:  "高速なファイル検索",
-                        img:        "/img/figma/intr.png",
-                        user_icon:  "/img/user/ryou2.jpg",
+                        img:        "/assets/figma/intr.png",
+                        user_icon:  "/assets/user/ryou2.jpg",
                         user_name:  "りょうさん",
                         winos:      true,
                         macos:      false,
@@ -197,11 +197,11 @@ if Item.count == 0
                         },
                         
                         
-                        {app_icon: "/img/figma/icon.PNG",
+                        {app_icon: "/assets/figma/icon.PNG",
                         main_title: "Dropbox",
                         sub_title:  "クラウドストレージ",
-                        img:        "/img/figma/intr.png",
-                        user_icon:  "/img/user/japan.jpg",
+                        img:        "/assets/figma/intr.png",
+                        user_icon:  "/assets/user/japan.jpg",
                         user_name:  "じゃぱおさん",
                         winos:      true,
                         macos:      true,
@@ -217,11 +217,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/7zip/icon.png",
+                        {app_icon: "/assets/7zip/icon.png",
                         main_title: "7-Zip",
                         sub_title:  "圧縮ソフト",
-                        img:        "/img/7zip/intr.PNG",
-                        user_icon:  "/img/user/harutiro-icon.jpg",
+                        img:        "/assets/7zip/intr.PNG",
+                        user_icon:  "/assets/user/harutiro-icon.jpg",
                         user_name:  "harutiro",
                         winos:      true,
                         macos:      false,
@@ -239,11 +239,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/chrome/icon.jpg",
+                        {app_icon: "/assets/chrome/icon.jpg",
                         main_title: "chrome",
                         sub_title:  "多機能なブラウザ",
-                        img:        "/img/chrome/intr.PNG",
-                        user_icon:  "/img/user/harutiro-icon.jpg",
+                        img:        "/assets/chrome/intr.PNG",
+                        user_icon:  "/assets/user/harutiro-icon.jpg",
                         user_name:  "harutiro",
                         winos:      true,
                         macos:      true,
@@ -259,11 +259,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/remote/icon.jpg",
+                        {app_icon: "/assets/remote/icon.jpg",
                         main_title: "Chromeリモートデスクトップ",
                         sub_title:  "簡単なリモートツール",
-                        img:        "/img/remote/intr.PNG",
-                        user_icon:  "/img/user/harutiro-icon.jpg",
+                        img:        "/assets/remote/intr.PNG",
+                        user_icon:  "/assets/user/harutiro-icon.jpg",
                         user_name:  "harutiro",
                         winos:      true,
                         macos:      true,
@@ -279,11 +279,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/syukusyou/icon.png",
+                        {app_icon: "/assets/syukusyou/icon.png",
                         main_title: "縮小革命",
                         sub_title:  "写真形式、サイズ変換ツール",
-                        img:        "/img/syukusyou/intr.PNG",
-                        user_icon:  "/img/user/harutiro-icon.jpg",
+                        img:        "/assets/syukusyou/intr.PNG",
+                        user_icon:  "/assets/user/harutiro-icon.jpg",
                         user_name:  "harutiro",
                         winos:      true,
                         macos:      false,
@@ -299,11 +299,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/craving/icon.PNG",
+                        {app_icon: "/assets/craving/icon.PNG",
                         main_title: "craving exproler 2",
                         sub_title:  "写真形式、サイズ変換ツール",
-                        img:        "/img/craving/intr.jpg",
-                        user_icon:  "/img/user/harutiro-icon.jpg",
+                        img:        "/assets/craving/intr.jpg",
+                        user_icon:  "/assets/user/harutiro-icon.jpg",
                         user_name:  "harutiro",
                         winos:      true,
                         macos:      false,
@@ -320,11 +320,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/iobit/icon.png",
+                        {app_icon: "/assets/iobit/icon.png",
                         main_title: "IObit Uninstaller",
                         sub_title:  "強力アンインストーラー",
-                        img:        "/img/iobit/intr.png",
-                        user_icon:  "/img/user/harutiro-icon.jpg",
+                        img:        "/assets/iobit/intr.png",
+                        user_icon:  "/assets/user/harutiro-icon.jpg",
                         user_name:  "harutiro",
                         winos:      true,
                         macos:      false,
@@ -340,11 +340,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/audacity/icon.jpg",
+                        {app_icon: "/assets/audacity/icon.jpg",
                         main_title: "Audacity",
                         sub_title:  "音楽ファイルエディタ",
-                        img:        "/img/audacity/intr.png",
-                        user_icon:  "/img/user/ryou.jpg",
+                        img:        "/assets/audacity/intr.png",
+                        user_icon:  "/assets/user/ryou.jpg",
                         user_name:  "りょうさん",
                         winos:      true,
                         macos:      true,
@@ -359,11 +359,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/filezilla/icon.jpg",
+                        {app_icon: "/assets/filezilla/icon.jpg",
                         main_title: "FileZilla",
                         sub_title:  "ファイル編集ソフト",
-                        img:        "/img/filezilla/intr.jpg",
-                        user_icon:  "/img/user/harutiro-icon.jpg",
+                        img:        "/assets/filezilla/intr.jpg",
+                        user_icon:  "/assets/user/harutiro-icon.jpg",
                         user_name:  "harutiro",
                         winos:      true,
                         macos:      true,
@@ -379,11 +379,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/kite/icon.PNG",
+                        {app_icon: "/assets/kite/icon.PNG",
                         main_title: "Kite",
                         sub_title:  "プログラミング補助ツール",
-                        img:        "/img/kite/intr.png",
-                        user_icon:  "/img/user/harutiro-icon.jpg",
+                        img:        "/assets/kite/intr.png",
+                        user_icon:  "/assets/user/harutiro-icon.jpg",
                         user_name:  "harutiro",
                         winos:      true,
                         macos:      false,
@@ -398,11 +398,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/runcat/icon.png",
+                        {app_icon: "/assets/runcat/icon.png",
                         main_title: "RunCat",
                         sub_title:  "システム状態確認ソフト",
-                        img:        "/img/runcat/intr.gif",
-                        user_icon:  "/img/user/japao.jpg",
+                        img:        "/assets/runcat/intr.gif",
+                        user_icon:  "/assets/user/japao.jpg",
                         user_name:  "じゃぱおさん",
                         winos:      true,
                         macos:      true,
@@ -417,11 +417,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/musescore/icon.jpg",
+                        {app_icon: "/assets/musescore/icon.jpg",
                         main_title: "MuseScore",
                         sub_title:  "楽譜作成ソフト",
-                        img:        "/img/musescore/intr.png",
-                        user_icon:  "/img/user/harutiro-icon.jpg",
+                        img:        "/assets/musescore/intr.png",
+                        user_icon:  "/assets/user/harutiro-icon.jpg",
                         user_name:  "harutiro",
                         winos:      true,
                         macos:      true,
@@ -436,11 +436,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/VLC/icon.jpg",
+                        {app_icon: "/assets/VLC/icon.jpg",
                         main_title: "VLC media player",
                         sub_title:  "マルチメディアプレイヤー",
-                        img:        "/img/VLC/intr.jpg",
-                        user_icon:  "/img/user/harutiro-icon.jpg",
+                        img:        "/assets/VLC/intr.jpg",
+                        user_icon:  "/assets/user/harutiro-icon.jpg",
                         user_name:  "harutiro",
                         winos:      true,
                         macos:      true,
@@ -455,11 +455,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/spacedesk/icon.jpg",
+                        {app_icon: "/assets/spacedesk/icon.jpg",
                         main_title: "SpaceDesk",
                         sub_title:  "スクリーンミラーリング",
-                        img:        "/img/spacedesk/intr.png",
-                        user_icon:  "/img/user/harutiro-icon.jpg",
+                        img:        "/assets/spacedesk/intr.png",
+                        user_icon:  "/assets/user/harutiro-icon.jpg",
                         user_name:  "harutiro",
                         winos:      true,
                         macos:      false,
@@ -474,11 +474,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/vysor/intr.jpg",
+                        {app_icon: "/assets/vysor/intr.jpg",
                         main_title: "Vysor",
                         sub_title:  "Androidのスクリーンミラーリング",
-                        img:        "/img/vysor/intr.jpg",
-                        user_icon:  "/img/user/amida-icon.jpg",
+                        img:        "/assets/vysor/intr.jpg",
+                        user_icon:  "/assets/user/amida-icon.jpg",
                         user_name:  "あみださん",
                         winos:      true,
                         macos:      true,
@@ -493,11 +493,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/JoyToKey/icon.jpg",
+                        {app_icon: "/assets/JoyToKey/icon.jpg",
                         main_title: "JoyToKey",
                         sub_title:  "コントローラーをキーボードに変えちゃうソフト",
-                        img:        "/img/JoyToKey/intr.jpg",
-                        user_icon:  "/img/user/harutiro-icon.jpg",
+                        img:        "/assets/JoyToKey/intr.jpg",
+                        user_icon:  "/assets/user/harutiro-icon.jpg",
                         user_name:  "harutiro",
                         winos:      true,
                         macos:      false,
@@ -512,11 +512,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/coretemp/icon.jfif",
+                        {app_icon: "/assets/coretemp/icon.jfif",
                         main_title: "Core Temp",
                         sub_title:  "CPU温度表示ソフト",
-                        img:        "/img/coretemp/intr.jpg",
-                        user_icon:  "/img/user/ryou.jpg",
+                        img:        "/assets/coretemp/intr.jpg",
+                        user_icon:  "/assets/user/ryou.jpg",
                         user_name:  "りょうさん",
                         winos:      true,
                         macos:      false,
@@ -530,10 +530,10 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/coretemp/icon.jfif",
+                        {app_icon: "/assets/coretemp/icon.jfif",
                         main_title: "OBS",
                         sub_title:  "録画、生放送ができるソフト",
-                        img:        "/img/coretemp/intr.jpg",
+                        img:        "/assets/coretemp/intr.jpg",
                         user_icon:  "",
                         user_name:  "フナちゃん",
                         winos:      true,
@@ -551,11 +551,11 @@ if Item.count == 0
                         
                         #　有料＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
                         
-                        {app_icon: "/img/ofice/icon.jpg",
+                        {app_icon: "/assets/ofice/icon.jpg",
                         main_title: "microsoft ofice",
                         sub_title:  "office系",
-                        img:        "/img/ofice/intr.png",
-                        user_icon:  "/img/user/syunya.jpg",
+                        img:        "/assets/ofice/intr.png",
+                        user_icon:  "/assets/user/syunya.jpg",
                         user_name:  "しゅんやさん",
                         winos:      true,
                         macos:      true,
@@ -570,11 +570,11 @@ if Item.count == 0
                         
                         },
                         
-                        {app_icon: "/img/norton/icon.png",
+                        {app_icon: "/assets/norton/icon.png",
                         main_title: "Norton",
                         sub_title:  "セキュリティ系",
-                        img:        "/img/norton/intr.png",
-                        user_icon:  "/img/user/harutiro-icon.jpg",
+                        img:        "/assets/norton/intr.png",
+                        user_icon:  "/assets/user/harutiro-icon.jpg",
                         user_name:  "harutiro",
                         winos:      true,
                         macos:      true,
@@ -591,11 +591,11 @@ if Item.count == 0
                         
                         # game===========================================
                         
-                        {app_icon: "/img/figma/icon.PNG",
+                        {app_icon: "/assets/figma/icon.PNG",
                         main_title: "寿司打",
                         sub_title:  "タイピングゲーム",
-                        img:        "/img/figma/intr.png",
-                        user_icon:  "/img/user/ryou2.jpg",
+                        img:        "/assets/figma/intr.png",
+                        user_icon:  "/assets/user/ryou2.jpg",
                         user_name:  "りょうさん",
                         winos:      true,
                         macos:      true,

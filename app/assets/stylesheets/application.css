@@ -17,11 +17,11 @@ body {
 /*==================================ヘッター======================================*/
 
 .backImage {
-    background-image: url("/img/formImage.jpg");
+    background-image: url("/assets/formImage.jpg");
 }
 
 .editBackImage{
-    background-image: url("/img/formImage.jpg");
+    background-image: url("/assets/formImage.jpg");
     height:100vh;
 }
 
