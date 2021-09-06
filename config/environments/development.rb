@@ -76,4 +76,5 @@ Rails.application.configure do
 
   config.hosts << "3000-crimson-owl-0ihh6ii5.ws-us16.gitpod.io"
   config.hosts << "3000-tan-blackbird-xiamkyyz.ws-us16.gitpod.io"
+  config.hosts << ".gitpod.io"
 end
