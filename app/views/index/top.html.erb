@@ -32,6 +32,17 @@
             &ensp;&ensp;Web<br>
         </p>
 
+        <% if session[:nickname] %>
+        <%= link_to 'ログアウト', logout_path %>
+        <% else %>
+        <%= button_to "Connect Twitter", "/auth/twitter", method: :post, class: "btn btn-primary" %>
+        <% end %>
+
+        <% if session[:nickname] %>
+            <p><%= "#{session[:nickname]}さん、こんにちは" %></p>
+            <img src="<%=session[:image_url]%>">
+        <% end %>
+
         <!--<ul>-->
         <!--    <li><a href="soft-index.html">soft</a></li>-->
         <!--    <li><a href="web-index.html">web</a></li>-->

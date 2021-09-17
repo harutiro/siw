@@ -4,6 +4,8 @@ class IndexController < ApplicationController
     def top
         @contributions = Item.all
         @categories = Category.all
+
+        @user = User.all
     end
 
     def create
