@@ -48,7 +48,7 @@ class IndexController < ApplicationController
             # img: img_url
         })
 
-        redirect_to '/index'
+        redirect_to '/'
     end
 
 end
