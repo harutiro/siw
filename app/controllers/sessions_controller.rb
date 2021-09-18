@@ -4,6 +4,7 @@ class SessionsController < ApplicationController
     user_data = request.env['omniauth.auth']
     session[:nickname] = user_data[:info][:nickname]
     session[:image_url] = user_data[:info][:image]
+    session[:name] = user_data[:info][:name]
     redirect_to "", notice: 'ログインしました'
     end
   

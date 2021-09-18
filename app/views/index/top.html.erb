@@ -39,7 +39,7 @@
         <% end %>
 
         <% if session[:nickname] %>
-            <p><%= "#{session[:nickname]}さん、こんにちは" %></p>
+            <p><%= "#{session[:name]}さん、こんにちは" %></p>
             <img src="<%=session[:image_url]%>">
         <% end %>
 
@@ -86,7 +86,7 @@
                     </div>
                     <div class="form-group my-2">
                         <label for="price">ユーザー名</label>
-                        <input type="text" name="user_name" id="user_name" class="form-control">
+                        <input type="text" name="user_name" id="user_name" class="form-control" value=<%=session[:name]%>>
                     </div>
                     <div>
                         <label for="price my-2">ユーザーアイコン ※ファイルを選択しない場合、ノーマルのアイコンになります</label>
