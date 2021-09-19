@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
   
   
     def destroy
-      session[:nickname] = nil
+      session.clear
       flash[:success] = 'ログアウトしました'
       redirect_to ""
     end
