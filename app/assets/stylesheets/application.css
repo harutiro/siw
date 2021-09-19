@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -20,9 +20,33 @@ body {
     background-image: url("/assets/formImage.jpg");
 }
 
-.editBackImage{
+.editBackImage {
     background-image: url("/assets/formImage.jpg");
-    height:100vh;
+    height: 100vh;
+}
+
+.right {
+    float: right;
+    margin-right: 8px;
+}
+
+.bold {
+    font-weight: 700 !important;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.centerHeight {
+    width:auto;
+    display: flex;
+    align-items: center;     /*上下中央揃え*/
+}
+
+.userText{
+    margin: 0px;
 }
 
 h1 {
@@ -43,7 +67,7 @@ header {
     padding-top: 150px;
 }
 
-header p{
+header p {
     text-align: center;
     font-size: 20px;
 }
@@ -73,13 +97,13 @@ nav ul {
 
 }
 
-nav p{
-    
+nav p {
+
     color: #e6eef6;
-    float:left;
+    float: left;
     margin-top: 0px;
     margin-left: var(--yohaku);
-    
+
 }
 
 nav li {
@@ -195,7 +219,8 @@ nav a:hover {
     height: 200px;
     object-fit: cover
 }
-.box-center{
+
+.box-center {
     height: 70px;
 }
 
@@ -210,30 +235,30 @@ nav a:hover {
     box-shadow: 1px 2px 8px #999999;
 }
 
-.box-center-name{
-    float:left;
-    margin-left:  var(--yohaku);
+.box-center-name {
+    float: left;
+    margin-left: var(--yohaku);
 }
 
-.box-center-name p{
+.box-center-name p {
     margin: 0px;
     margin-top: 23px;
     font-size: 12px;
     color: #666666;
 }
 
-.box-center-name h3{
+.box-center-name h3 {
     margin: 0px;
     margin-top: 8px;
-    
+
 }
 
-.box-center-icon{
-    float:right;
+.box-center-icon {
+    float: right;
     margin-right: var(--yohaku);
 }
 
-.box-center-icon p{
+.box-center-icon p {
     margin: 0px;
     margin-top: 23px;
     margin-left: 23px;
@@ -241,7 +266,7 @@ nav a:hover {
     color: #666666;
 }
 
-.box-center-icon img{
+.box-center-icon img {
     margin-top: 5px;
     height: 30px;
     width: 30px;
@@ -317,4 +342,3 @@ footer {
     height: 50px;
 
 }
-

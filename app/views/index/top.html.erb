@@ -27,21 +27,33 @@
         </a>
 
         <p>
-            System<br>.
+            System<br>
             &ensp;Infomation<br>
             &ensp;&ensp;Web<br>
         </p>
 
-        <% if session[:nickname] %>
-        <%= link_to 'ログアウト', logout_path %>
-        <% else %>
-        <%= button_to "Connect Twitter", "/auth/twitter", method: :post, class: "btn btn-primary" %>
-        <% end %>
+        <div class="centerHeight right">
+            
 
-        <% if session[:nickname] %>
-            <p><%= "#{session[:name]}さん、こんにちは" %></p>
-            <img src="<%=session[:image_url]%>">
-        <% end %>
+            <% if session[:nickname] %>
+            <img src="<%=session[:image_url]%>" class="rounded-circle right">
+            <div class="right flexbox">
+                <p class="bold userText"><%= "#{session[:name]}" %></p>
+                <p class="userText"><%="#{session[:nickname]}"%></p>
+            </div>
+            <% end %>
+
+            <% if session[:nickname] %>
+            <%= link_to 'ログアウト', logout_path,class: "btn btn-outline-info right text-white" %>
+            <% else %>
+            <%= button_to "ツイッターにログイン", "/auth/twitter", method: :post, class: "btn btn-info right text-white" %>
+            <% end %>
+
+        </div>
+
+
+
+
 
         <!--<ul>-->
         <!--    <li><a href="soft-index.html">soft</a></li>-->
@@ -86,7 +98,8 @@
                     </div>
                     <div class="form-group my-2">
                         <label for="price">ユーザー名</label>
-                        <input type="text" name="user_name" id="user_name" class="form-control" value=<%=session[:name]%>>
+                        <input type="text" name="user_name" id="user_name" class="form-control"
+                            value=<%=session[:name]%>>
                     </div>
                     <div>
                         <label for="price my-2">ユーザーアイコン ※ファイルを選択しない場合、ノーマルのアイコンになります</label>
