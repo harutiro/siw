@@ -30,6 +30,11 @@ body {
     margin-right: 8px;
 }
 
+.left{
+    float: left;
+    margin-left: 8px;
+}
+
 .bold {
     font-weight: 700 !important;
 }
