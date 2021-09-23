@@ -70,8 +70,8 @@
 
                     <%
 =begin%>
- <img src="" class="box-second"> 
-<%
+                    <img src="" class="box-second">
+                    <%
 =end%>
 
                     <div class="box-center">
@@ -89,9 +89,46 @@
 
                         <div class="box-center-icon">
                             <p>対応OS</p>
-                            <img src="/assets/os/win.png">
-                            <img src="/assets/os/apple.png">
-                            <img src="/assets/os/linux.png">
+
+                            <div class="container">
+                                <div class="box-center-Edit">
+                                    <label class="check-box-win" for="windows">
+                                        <input name="windows" type="checkbox" id="windows" value=ture>
+                                        <span class="text"></span>
+                                    </label>
+                                </div>
+
+                                <div class="box-center-Edit">
+                                    <label class="check-box-mac" for="mac">
+                                        <input name="mac" type="checkbox" id="mac" value=ture>
+                                        <span class="text"></span>
+                                    </label>
+                                </div>
+
+                                <div class="box-center-Edit">
+                                    <label class="check-box-linux" for="linux">
+                                        <input name="linux" type="checkbox" id="linux" value=ture>
+                                        <span class="text"></span>
+                                    </label>
+                                </div>
+
+                                <div class="box-center-Edit">
+                                    <label class="check-box-android" for="android">
+                                        <input name="android" type="checkbox" id="android" value=ture>
+                                        <span class="text"></span>
+                                    </label>
+                                </div>
+
+                                <div class="box-center-Edit">
+                                    <label class="check-box-ios" for="ios">
+                                        <input name="ios" type="checkbox" id="ios" value=ture>
+                                        <span class="text"></span>
+                                    </label>
+                                </div>
+
+                                <p></p>
+
+                            </div>
                         </div>
                     </div>
                     <div class="box-third m-3">
@@ -99,26 +136,7 @@
                             placeholder="メッセージをどうぞ"></textarea>
                     </div>
 
-                    <%
-=begin%>
-                    <div class="container my-3">
-                        <label for="price">対応OS ※OSの再編集は現在不可能ですご注意くださいm(_ _)m</label>
-                        <p></p>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" name="windows" type="checkbox" id="windows" value=ture>
-                            <label class="form-check-label" for="inlineCheckbox1">Windows</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            　<input class="form-check-input" name="mac" type="checkbox" id="mac" value=true>
-                            <label class="form-check-label" for="inlineCheckbox2">Mac</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" name="linux" type="checkbox" id="linux" value=true>
-                            　 <label class="form-check-label" for="inlineCheckbox3">Linux</label>
-                        </div>
-                    </div>
-                    <%
-=end%>
+
                     <div class="d-flex justify-content-end align-items-center">
                         <div class="container pull-left m-1">
                             <input type="text" name="url" id="url" class="form-control" placeholder="公式URLをどうぞ">
@@ -141,7 +159,7 @@
                             <input type="submit" value="追加をする" class="btn btn-dark float-right">
                         </div>
                     </div>
-                    
+
 
                 </form>
             </div>

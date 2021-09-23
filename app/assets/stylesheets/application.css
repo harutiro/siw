@@ -83,7 +83,7 @@ nav a:hover {
     margin-right: 8px;
 }
 
-.left{
+.left {
     float: left;
     margin-left: 8px;
 }
@@ -98,11 +98,12 @@ nav a:hover {
 }
 
 .centerHeight {
-    width:auto;
-    margin:  0 auto;    /*上下中央揃え*/
+    width: auto;
+    margin: 0 auto;
+    /*上下中央揃え*/
 }
 
-.userText{
+.userText {
     margin: 0px;
 }
 
@@ -114,6 +115,132 @@ nav a:hover {
     border-left-width: 10px;
     padding-left: 15px;
     margin-bottom: 50px;
+}
+
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ チェックボックス ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+/* win */
+.check-box-win {
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.check-box-win input {
+    display: none;
+}
+
+.check-box-win input+.text:before {
+    content: "";
+    display: inline-block;
+    background-image: none, url("/assets/os/win_non.png");
+    background-size: 100%, 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.check-box-win input:checked+.text:before {
+    background-image: url("/assets/os/win.png");
+}
+
+/* mac */
+
+.check-box-mac {
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.check-box-mac input {
+    display: none;
+}
+
+.check-box-mac input+.text:before {
+    content: "";
+    display: inline-block;
+    background-image: none, url("/assets/os/mac_non.png");
+    background-size: 100%, 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.check-box-mac input:checked+.text:before {
+    background-image: url("/assets/os/mac.png");
+}
+
+/* linux */
+
+.check-box-linux {
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.check-box-linux input {
+    display: none;
+}
+
+.check-box-linux input+.text:before {
+    content: "";
+    display: inline-block;
+    background-image: none, url("/assets/os/linux_non.png");
+    background-size: 100%, 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.check-box-linux input:checked+.text:before {
+    background-image: url("/assets/os/linux.png");
+}
+
+/* android */
+
+.check-box-android {
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.check-box-android input {
+    display: none;
+}
+
+.check-box-android input+.text:before {
+    content: "";
+    display: inline-block;
+    background-image: none, url("/assets/os/android_non.png");
+    background-size: 100%, 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.check-box-android input:checked+.text:before {
+    background-image: url("/assets/os/android.png");
+}
+
+/* ios */
+
+.check-box-ios {
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.check-box-ios input {
+    display: none;
+}
+
+.check-box-ios input+.text:before {
+    content: "";
+    display: inline-block;
+    background-image: none, url("/assets/os/ios_non.png");
+    background-size: 100%, 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.check-box-ios input:checked+.text:before {
+    background-image: url("/assets/os/ios.png");
 }
 
 /*==================================紹介文======================================*/
@@ -234,6 +361,16 @@ nav a:hover {
     margin-left: var(--yohaku);
     margin-top: var(--yohaku);
     float: left;
+    box-shadow: 1px 2px 8px #999999;
+}
+
+.box-center-Edit{
+    margin-left: var(--yohaku);
+    object-fit: cover;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 90px;
     box-shadow: 1px 2px 8px #999999;
 }
 
