@@ -80,16 +80,16 @@ class IndexController < ApplicationController
     
     end
 
-    # post '/delete/:id' do
-    #     Contribution.find(params[:id]).destroy
-    #     redirect_to '/'
-    # end
+    def delete
+        Item.find(params[:id]).destroy
+        redirect_to '/'
+    end
     
-    # get '/edit/:id' do
-    #     @content = Contribution.find (params[:id])
-    #     @categories = Category.all
-    #     erb :edit
-    # end
+    get '/edit/:id' do
+        @content = Contribution.find (params[:id])
+        @categories = Category.all
+        erb :edit
+    end
     
     # post '/renew/:id' do
         

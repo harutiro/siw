@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   post "create" => "index#create"
   post "good/:id" => "index#good"
   get "category/:id" => "index#category"
+  post '/delete/:id' => "index#delete"
 
   get '/auth/:provider/callback', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
