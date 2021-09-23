@@ -15,45 +15,6 @@ body {
 }
 
 /*==================================ヘッター======================================*/
-
-.backImage {
-    background-image: url("/assets/formImage.jpg");
-}
-
-.editBackImage {
-    background-image: url("/assets/formImage.jpg");
-    height: 100vh;
-}
-
-.right {
-    float: right;
-    margin-right: 8px;
-}
-
-.left{
-    float: left;
-    margin-left: 8px;
-}
-
-.bold {
-    font-weight: 700 !important;
-}
-
-.flexbox {
-    display: flex;
-    flex-direction: column;
-}
-
-.centerHeight {
-    width:auto;
-    display: flex;
-    align-items: center;     /*上下中央揃え*/
-}
-
-.userText{
-    margin: 0px;
-}
-
 h1 {
     color: #000044;
     font-size: 90px;
@@ -92,16 +53,6 @@ nav ul {
     text-align: right;
 }
 
-.name {
-    color: #e6eef6;
-    float: left;
-    margin: 0px;
-    margin-top: 8px;
-    margin-left: 30px;
-    font-size: 30px;
-
-}
-
 nav p {
 
     color: #e6eef6;
@@ -124,6 +75,35 @@ nav a {
 
 nav a:hover {
     color: #ffcc11;
+}
+
+
+.right {
+    float: right;
+    margin-right: 8px;
+}
+
+.left{
+    float: left;
+    margin-left: 8px;
+}
+
+.bold {
+    font-weight: 700 !important;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.centerHeight {
+    width:auto;
+    margin:  0 auto;    /*上下中央揃え*/
+}
+
+.userText{
+    margin: 0px;
 }
 
 /*==================================使いまわし系================================*/
@@ -165,6 +145,15 @@ nav a:hover {
     float: right;
 }
 
+.backImage {
+    background-image: url("/assets/formImage.jpg");
+}
+
+.editBackImage {
+    background-image: url("/assets/formImage.jpg");
+    height: 100vh;
+}
+
 /*=======================================紹介部分================================*/
 
 .boxes {
@@ -177,15 +166,23 @@ nav a:hover {
     margin-top: var(--yohaku);
     padding: 0px;
     background-color: #FEFEFE;
-    height: 600px;
     width: 450px;
     margin-left: var(--yohaku);
     box-shadow: 5px 5px 20px #999999;
     border-radius: 20px;
 }
 
+.boxEdit {
+    margin-top: var(--yohaku);
+    padding: 0px;
+    background-color: #FEFEFE;
+    margin-left: var(--yohaku);
+    box-shadow: 5px 5px 20px #999999;
+    border-radius: 20px;
+}
+
 .box-first {
-    height: 60px;
+    height: 100px;
     width: 100%;
 }
 
