@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   post "good/:id" => "index#good"
   get "category/:id" => "index#category"
   post '/delete/:id' => "index#delete"
+  get '/edit/:id' => "index#edit"
+  post '/renew/:id' => "index#renew"
 
   get '/auth/:provider/callback', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'

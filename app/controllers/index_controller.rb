@@ -85,36 +85,35 @@ class IndexController < ApplicationController
         redirect_to '/'
     end
     
-    get '/edit/:id' do
-        @content = Contribution.find (params[:id])
+    def edit
+        @content = Item.find (params[:id])
         @categories = Category.all
-        erb :edit
     end
     
-    # post '/renew/:id' do
+    def renew
         
-    #     user_icon_url = ''
-    #     if params[:user_icon]
-    #         img = params[:user_icon]
-    #         tempfile = img[:tempfile]
-    #         upload = Cloudinary::Uploader.upload(tempfile.path)
-    #         user_icon_url = upload['url']
-    #     end
+        user_icon_url = ''
+        if params[:user_icon]
+            img = params[:user_icon]
+            tempfile = img[:tempfile]
+            upload = Cloudinary::Uploader.upload(tempfile.path)
+            user_icon_url = upload['url']
+        end
     
-    #     content = Contribution.find(params[:id])
-    #     content.update({
-    #         main_title: params[:main_title],
-    #         sub_title: params[:sub_title],
-    #         user_name: params[:user_name],
-    #         message: params[:message],
-    #         url: params[:url],
-    #         like: 0,
-    #         category_id: params[:category],
-    #         pass: params[:pass],
-    #         user_icon: user_icon_url,
-    #     })
+        content = Item.find(params[:id])
+        content.update({
+            main_title: params[:main_title],
+            sub_title: params[:sub_title],
+            user_name: params[:user_name],
+            message: params[:message],
+            url: params[:url],
+            like: 0,
+            category_id: params[:category],
+            pass: params[:pass],
+            user_icon: user_icon_url,
+        })
         
-    #     redirect_to '/'
-    # end
+        redirect_to '/'
+    end
 
 end
