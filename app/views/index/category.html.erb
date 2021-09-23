@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SIW systemInfomatioWeb</title>
+
+
+    <%# css %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Satisfy|Stoke|Yellowtail|Geo|Oswald|Lobster"
+        rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav>
+        <a href="/" class="name">
+            S I W
+        </a>
+
+        <p>
+            System<br>
+            &ensp;Infomation<br>
+            &ensp;&ensp;Web<br>
+        </p>
+
+        <div class="centerHeight right">
+            
+
+            <% if session[:nickname] %>
+            <img src="<%=session[:image_url]%>" class="rounded-circle right">
+            <div class="right flexbox">
+                <p class="bold userText"><%= "#{session[:name]}" %></p>
+                <p class="userText"><%="#{session[:nickname]}"%></p>
+            </div>
+            <% end %>
+
+            <% if session[:nickname] %>
+            <%= link_to 'ログアウト', logout_path,class: "btn btn-outline-info right text-white" %>
+            <% else %>
+            <%= button_to "ツイッターにログイン", "/auth/twitter", method: :post, class: "btn btn-info right text-white" %>
+            <% end %>
+
+        </div>
+    </nav>
+
+    <div class="backImage">
+        <div class="container-fluid p-2 d-flex justify-content-center">
+            <div class="card col-lg-6 p-5 border-3">
+                <form action="/create" method="post" enctype="multipart/form-data">
+
+                    <div class="form-group my-2">
+                        <label for="title">アプリ名</label>
+                        <input type="text" name="main_title" id="main_title" class="form-control">
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="price">サイトの大雑把な説明を一行でどうぞ！！</label>
+                        <input type="text" name="sub_title" id="sub_title" class="form-control">
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="price">メッセージ</label>
+                        <textarea cols="30" rows="10" name="message" id="message" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="price">公式ページURL</label>
+                        <input type="text" name="url" id="url" class="form-control">
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="price">ユーザー名</label>
+                        <input type="text" name="user_name" id="user_name" class="form-control"
+                            value=<%=session[:name]%>>
+                    </div>
+                    <div>
+                        <label for="price my-2">ユーザーアイコン ※ファイルを選択しない場合、ノーマルのアイコンになります</label>
+                        <p><input type="file" name="user_icon" class="form-control-file" /></p>
+                    </div>
+                    <!--<div class="form-group">-->
+                    <!--    <label for="price">パスワード　※　編集するときに使用予定、現在パスワードを使用しなくても編集が</label>-->
+                    <!--    <input type="text" name="pass" id="pass" class="form-control">-->
+                    <!--</div>-->
+
+                    <div class="container my-3">
+                        <label for="price">対応OS ※OSの再編集は現在不可能ですご注意くださいm(_ _)m</label>
+                        <p></p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" name="windows" type="checkbox" id="windows" value=ture>
+                            <label class="form-check-label" for="inlineCheckbox1">Windows</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            　<input class="form-check-input" name="mac" type="checkbox" id="mac" value=true>
+                            <label class="form-check-label" for="inlineCheckbox2">Mac</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" name="linux" type="checkbox" id="linux" value=true>
+                            　 <label class="form-check-label" for="inlineCheckbox3">Linux</label>
+                        </div>
+                    </div>
+
+                    <div class="like my-2">
+                        <div class="form-group my-2">
+                            <label for="category">カテゴリー</label>
+                            <select name="category" class="form-control">
+                                <% @categories.each do |category|%>
+                                <option value="<%= category.id %>"> <%= category.name %> </option>
+                                <% end %>
+                            </select>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="追加" class="btn btn-dark float-right mt-2">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-group col-lg-12">
+        <%  @categories.each do |category| %>
+        <a href="/category/<%= category.id %>" class="btn btn-secondary"><%= category.name %></a>
+        <% end %>
+    </div>
+
+    <!--    Item  -->
+
+    <section class="free" id="free">
+        <h2 class="title"><%= @category_name %></h2>
+
+        <div class="boxes">
+            <% @contributions.each do |item| %>
+
+            <div class="box">
+                <div class="box-first">
+                    <% uri = URI.parse(item.url) %>
+                    <img src="https://api.faviconkit.com/<%= uri.host %>/144">
+                    <div>
+                        <h3><%= item.main_title%></h3>
+                        <p><%= item.sub_title%></p>
+                    </div>
+                </div>
+                <img src="https://lit-screenshot-api.herokuapp.com/?url=<%= item.url %>" class="box-second">
+                <div class="box-center">
+                    <% unless item.user_icon.empty? %>
+                    <img src="<%= item.user_icon %>">
+                    <% else %>
+                    <img src="/assets/user/public.png">
+                    <% end %>
+                    <div class="box-center-name">
+                        <p>紹介者</p>
+                        <h3><%= item.user_name %></h3>
+                    </div>
+                    <div class="box-center-icon">
+                        <p>対応OS</p>
+                        <% if item.winos %>
+                        <img src="/assets/os/win.png">
+                        <% end %>
+                        <% if item.macos%>
+                        <img src="/assets/os/apple.png">
+                        <% end %>
+                        <% if item.linuxos %>
+                        <img src="/assets/os/linux.png">
+                        <% end %>
+                    </div>
+                </div>
+                <div class="box-third">
+                    <p><%= item.message %></p>
+                </div>
+
+                <div class="d-flex justify-content-end align-items-center">
+                    <div class="container pull-left m-0">
+                        <a class="box-button" href="<%= item.url%>" target="_blank">公式ウェブ＋ダウンロードサイト</a>
+                    </div>
+
+                    <span class="card-dooter-text"><%= item.like %></span>
+                    <form action="/good/<%= item.id %>" method="post">
+                        <input src="/assets/icons/fav.png" width="50" type="image" value="いいね"
+                            class="btn card-fotter-text">
+                    </form>
+
+                    <form action="/delete/<%= item.id %>" method="post">
+                        <input src="/assets/icons/delete.png" width="50" type="image" value="消去"
+                            class="btn card-fotter-text">
+                    </form>
+
+                    <a href="/edit/<%= item.id %>" class="btn card-fotter-text"><img src="/assets/icons/edit.png"
+                            width="30" alt="サンプル"></a>
+                </div>
+            </div>
+
+            <% end %>
+        </div>
+    </section>
+
+
+
+    <footer>&copy; 2021 Harutiro</footer>
+
+</body>
+
+</html>
