@@ -22,6 +22,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このサイトは、ブラウザ上で簡単にデザインができるツールです。インターフェースのデザインを、場所を選ばずに
                                     ブラウザさえ起動できれば使えるため、利便性が高くチーム体制での作業にも向いています。
@@ -42,6 +44,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このサイトは、Neumorphismのデザインに沿ったちょっと浮き出ているデザイン、
                                     やちょっとへこんだデザインが簡単にできてしまうウェブサイトです。
@@ -63,6 +67,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このサイトは、よく見かける立体的なデザインを簡単に誰にでも、
                                     作成できるサイトです。横にあるパレットから引っ張るだけでよくある、
@@ -82,6 +88,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このサイトは、直観的にあなたの欲しかった色を探しあてることができるサイト
                                     です。
@@ -103,6 +111,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このサイトは、よく見かける水玉の模様を簡単に作成できるサイトです。
                                     このサイトを用いることでちょっとアクセントがたらないようなところで、
@@ -124,6 +134,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "Google翻訳で行っていた単語検索、それは本当に正しい情報なのでしょうか？
                                     より詳しい情報を取得するためにこちらのサイトを使ってみてはいかがでしょうか？",
@@ -142,6 +154,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "無料でできてなおかつ、手軽にできる！！
                                     外国語を勉強するならこれ！！
@@ -168,6 +182,8 @@ if Item.count == 0
                         winos:      false,
                         macos:      false,
                         linuxos:    false,
+                        androidos:  true,
+                        iosos:      true,
                         pass:       "testInput",
                         message:    "PDFファイルの結合、ページ抽出・入れ替えなど、ちょっとした編集であっても、
                                     使えるツールはAdobe公式を含めほとんどが有料。でも「CamScanner」なら、無料で、
@@ -187,6 +203,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      false,
                         linuxos:    false,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "ファイル検索は、エクスプローラーの検索を使っていますか？それともwin+Rの検索を使っていますか？
                                     そんなにも負けないくらい早い検索Everythingを使ってみてはいかがでしょうか？",
@@ -206,6 +224,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  true,
+                        iosos:      true,
                         pass:       "testInput",
                         message:    "このサービスは、データの同期によるバックアップ、端末間での
                                     データの移行、データのバックアップからの復旧ができるなど、
@@ -226,6 +246,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      false,
                         linuxos:    false,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このソフトは、とにかく簡単に、そして様々な形式の圧縮ファイルに対応していることが
                                     いいところだと思います！！\n
@@ -248,6 +270,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  true,
+                        iosos:      true,
                         pass:       "testInput",
                         message:    "このソフトはとにかくブラウザなのに、様々な拡張機能が入って自分好みにカスタマイズができるところがいいところです！<br>
                                     広告をブロックしたり、見た目を自分好みに変換したり、とても便利です！！<br>
@@ -268,6 +292,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  true,
+                        iosos:      true,
                         pass:       "testInput",
                         message:    "このソフトはリモートでデスクトップを簡単につなげることが出来ます！<br>
                                     外から自分のメイン機を操作してデータファイルを回収したり、ＰＣの操作に困っている友達を遠くから支援することもできます。<br>
@@ -288,6 +314,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      false,
                         linuxos:    false,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このソフトは、有名な吉田製作所さんが作成されたアプリです。<br>
                                     画面に出ている7個の設定を済ませるだけで、簡単に画像ファイルを変換縮小、画像の比率等を変えてくれます。<br>
@@ -308,6 +336,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      false,
                         linuxos:    false,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このソフトは、動画サイトの動画を実際のサイトのページからボタン一つで簡単に落とせるやつです。<br>
                                     実際に動画をみて確認しながらダウンロードをするときは便利です。<br>
@@ -329,6 +359,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      false,
                         linuxos:    false,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このソフトは、アンインストールする時に出てくる残留ファイルを全部消してくれるやつです。<br>
                                     今まで、アンインストールをするときに、失敗して、変に残ってしまうということが多々ありました。<br>
@@ -349,6 +381,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このソフトは、音楽ファイルを編集して、エフェクトやノイズを除去したり、様々なことが出来るソフトです。<br>
                                     録音をしたりして、ノイズがのっかってしまったとき、ノイズ除去を押して様々な設定をチョットするだけで簡単に除去ができます。<br>
@@ -368,6 +402,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このソフトは、サーバーと自分のローカルのデータを取引するときに便利なソフトです。<br>
                                     サーバーでデータをやり取りする時CLI（コンソール）で操作するのはとてもめんどくさいですし、わかりにくいです。<br>
@@ -388,6 +424,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      false,
                         linuxos:    false,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    " このソフトはプログラミングをするときに自動でよくうつ内容を予測変換を出してくれるソフトです。<br>
                                     kotlinやpythonなど様々なプログラミング言語に対応しています！！<br>
@@ -407,6 +445,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    false,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    " システムの状態を確認することができます。<br>
                                     CPU使用率,メモリ性能,バッテリー状態,ディスク容量,ネットワーク接続状況<br>
@@ -426,6 +466,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    " このソフトは、実際の楽譜を描く感覚で楽譜を作成できるソフトです。<br>
                                     一つスコアを作れば簡単にパート譜を作ることができ、とても便利です。<br>
@@ -445,6 +487,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このソフトは、様々な動画、音声、写真ファイルを再生できます。<br>
                                     windowsの通常入ってるソフトで読み込めないものでもほぼほぼ読み込むことができます。<br>
@@ -464,6 +508,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      false,
                         linuxos:    false,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    " このソフトは、とにかく外出先でもデュアルディスプレイを使いたい方にお勧めです。<br>
                                     無料であなたのiPhone、スマホ、タブレットなどを外部ディスプレイに変更できます。<br>
@@ -483,6 +529,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このソフトは、AndroidとPCをUSBでつなげるだけでAndroidの画面をPCをにかんたんに映し出せるソフトです<br>
                                     PC側から画面の操作をすることもできますので、画面が割れて、しかも液晶漏れとかしてしまっても復旧がしやすくなっちゃう便利なソフトです！！<br>
@@ -502,6 +550,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      false,
                         linuxos:    false,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このソフトは、コントローラーをUSBで刺しただけでは対応していないソフトにコントローラーを対応させれる便利なソフトです。<br>
                                     一つ一つボタンを選択して、キーボードの文字と紐ずけるだけで簡単にコントローラー化！<br>
@@ -521,6 +571,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      false,
                         linuxos:    false,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このソフトは、CPUの温度を確認できるソフトです。<br>
                                     ゲームをしているときや、ベンチマークをしているときのCPUの温度をみてどれぐらいの負荷がかかるのか簡単に見ることができます。",
@@ -539,6 +591,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "ビデオ録画と生放送用の無料でオープンソースのソフトウェア。 
                                     Windows、Mac、Linuxですばやく簡単にダウンロードして配信を開始できます。高性能のリアルタイムでの映像/音声のキャプチャとミキシングを行い、
@@ -560,6 +614,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    false,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "言わずもがな、とりあえず全員かっとけというソフトですね。<br>
                                     やはり純正ですので、グラフの作成などは便利ですね。<br>
@@ -579,6 +635,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    false,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    " このソフトは、セキュリティーソフトとしてはもちろんのこと、ほかにもTempファイルの消去やHDDの断片化の改良など、たくさんの機能が付いていてとても便利です。<br>
                                     ほかにも、やばいサイトにアクセスしたときに自動的に遮断してくれる機能などもあります！！<br>",
@@ -600,6 +658,8 @@ if Item.count == 0
                         winos:      true,
                         macos:      true,
                         linuxos:    true,
+                        androidos:  false,
+                        iosos:      false,
                         pass:       "testInput",
                         message:    "このゲームは、タイピングゲームとなっており、様々なお寿司を
                                     タイピングをすることで食べていき、最終的に食べた合計金額で競います
