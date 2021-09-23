@@ -222,13 +222,13 @@
                         <a class="box-button" href="<%= item.url%>" target="_blank">公式ウェブ＋ダウンロードサイト</a>
                     </div>
 
-
                     <span class="card-dooter-text"><%= item.like %></span>
                     <form action="/good/<%= item.id %>" method="post">
                         <input src="/assets/icons/fav.png" width="50" type="image" value="いいね"
                             class="btn card-fotter-text">
                     </form>
 
+                    <% if item.pass == session[:nickname]%>
                     <form action="/delete/<%= item.id %>" method="post">
                         <input src="/assets/icons/delete.png" width="50" type="image" value="消去"
                             class="btn card-fotter-text">
@@ -236,6 +236,7 @@
 
                     <a href="/edit/<%= item.id %>" class="btn card-fotter-text"><img src="/assets/icons/edit.png"
                             width="30" alt="サンプル"></a>
+                    <% end %>
                 </div>
             </div>
 
