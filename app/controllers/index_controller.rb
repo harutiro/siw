@@ -40,6 +40,8 @@ class IndexController < ApplicationController
             winos: params[:windows],
             macos: params[:mac],
             linuxos: params[:linux],
+            androidos: params[:android],
+            iosos: params[:ios],
             message: params[:message],
             url: params[:url],
             like: 0,
