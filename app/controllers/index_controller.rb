@@ -2,36 +2,17 @@ class IndexController < ApplicationController
     protect_from_forgery
 
     def top
-            @contributions = Item.all
-            @categories = Category.all
+        @@userName = session[:name]
+        @@userImage = session[:image_url]
+        @@userNickName = session[:nickname]
+        @contributions = Item.all
+        @categories = Category.all
 
         @user = User.all
     end
 
     def create
         user_icon_url = ''
-        if params[:user_icon]
-            img = params[:user_icon]
-            tempfile = img[:tempfile]
-            upload = Cloudinary::Uploader.upload(tempfile.path)
-            user_icon_url = upload['url']
-        end
-
-        # app_icon_url = ''
-        # if params[:app_icon]
-        #     img = params[:app_icon]
-        #     tempfile = img[:tempfile]
-        #     upload = Cloudinary::Uploader.upload(tempfile.path)
-        #     app_icon_url = upload['url']
-        # end
-
-        # img_url = ''
-        # if params[:image]
-        #     img = params[:image]
-        #     tempfile = img[:tempfile]
-        #     upload = Cloudinary::Uploader.upload(tempfile.path)
-        #     img_url = upload['url']
-        # end
 
         Item.create({
             main_title: params[:main_title],
@@ -45,9 +26,9 @@ class IndexController < ApplicationController
             message: params[:message],
             url: params[:url],
             like: 0,
-            pass: params[:pass],
+            pass: @@userNickName,
             category_id: params[:category],
-            user_icon: user_icon_url,
+            user_icon: @@userImage,
             # app_icon: app_icon_url,
             # img: img_url
         })
@@ -60,12 +41,6 @@ class IndexController < ApplicationController
         @category = Category.find(params[:id])
         @category_name = @category.name
         @contributions = @category.items
-
-        print "======================================\n"
-        print @category.name
-        print "\n"
-        print @category.items
-        print "\n"
     end
 
     def good
@@ -93,12 +68,6 @@ class IndexController < ApplicationController
     def renew
         
         user_icon_url = ''
-        if params[:user_icon]
-            img = params[:user_icon]
-            tempfile = img[:tempfile]
-            upload = Cloudinary::Uploader.upload(tempfile.path)
-            user_icon_url = upload['url']
-        end
     
         content = Item.find(params[:id])
         content.update({
@@ -114,8 +83,8 @@ class IndexController < ApplicationController
             url: params[:url],
             like: 0,
             category_id: params[:category],
-            pass: params[:pass],
-            user_icon: user_icon_url,
+            pass: @@nickname,
+            user_icon: @@image_url,
         })
         
         redirect_to '/'

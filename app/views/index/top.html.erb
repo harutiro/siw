@@ -185,7 +185,7 @@
                 </div>
                 <img src="https://lit-screenshot-api.herokuapp.com/?url=<%= item.url %>" class="box-second">
                 <div class="box-center">
-                    <% unless item.user_icon.empty? %>
+                    <% unless item.user_icon.blank? %>
                     <img src="<%= item.user_icon %>">
                     <% else %>
                     <img src="/assets/user/public.png">
@@ -221,6 +221,7 @@
                     <div class="container pull-left m-0">
                         <a class="box-button" href="<%= item.url%>" target="_blank">公式ウェブ＋ダウンロードサイト</a>
                     </div>
+
 
                     <span class="card-dooter-text"><%= item.like %></span>
                     <form action="/good/<%= item.id %>" method="post">
