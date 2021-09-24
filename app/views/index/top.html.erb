@@ -53,6 +53,12 @@
         </div>
     </nav>
 
+    <div class="btn-group width100 m-0">
+        <%  @categories.each do |category| %>
+        <a href="/category/<%= category.id %>" class="btn btn-secondary"><%= category.name %></a>
+        <% end %>
+    </div>
+
     <div class="backImage p-5">
 
         <% if session[:nickname] %>
@@ -177,12 +183,6 @@
                 <%= button_to "ツイッターにログインをして投稿をする", "/auth/twitter", method: :post,class: "btn btn-info text-white bd-highlight" %>
             </div>
         </div>
-        <% end %>
-    </div>
-
-    <div class="btn-group width100">
-        <%  @categories.each do |category| %>
-        <a href="/category/<%= category.id %>" class="btn btn-secondary"><%= category.name %></a>
         <% end %>
     </div>
 
