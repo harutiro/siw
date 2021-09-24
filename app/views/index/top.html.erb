@@ -53,7 +53,9 @@
         </div>
     </nav>
 
-    <div class="backImage">
+    <div class="backImage p-5">
+
+        <% if session[:nickname] %>
         <div class="container-fluid p-2 d-flex justify-content-center">
             <div class="boxEdit m-0">
                 <form action="/create" method="post" enctype="multipart/form-data">
@@ -158,6 +160,23 @@
                 </form>
             </div>
         </div>
+        <% else %>
+
+        <div class="p-2 d-flex flex-column bd-highlight justify-content-center">
+
+            <div class="box11 m-auto mb-4">
+                <p class="bd-highlight text-center">
+                    今後みなさまが安心して投稿できるようにするため、投稿に対し、ユーザーを識別をして、そのユーザーじゃ無いと編集等ができなくなりました。
+                    <br>ユーザー識別として、＠マークより先のユーザーIDを使用しています。
+                    <br>ユーザーIDを変更してしまい、投稿が編集できなくなった場合は、運営までご連絡ください。
+                </p>
+            </div>
+
+            <div class="m-auto">
+                <%= button_to "ツイッターにログインをして投稿をする", "/auth/twitter", method: :post,class: "btn btn-info text-white bd-highlight" %>
+            </div>
+        </div>
+        <% end %>
     </div>
 
     <div class="btn-group col-lg-12">
