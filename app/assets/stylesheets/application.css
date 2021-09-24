@@ -307,7 +307,8 @@ nav a:hover {
 
 .editBackImage {
     background-image: url("/assets/formImage.jpg");
-    height: 100vh;
+    min-height: 100vh;
+    height:auto;
 }
 
 /*=======================================紹介部分================================*/
