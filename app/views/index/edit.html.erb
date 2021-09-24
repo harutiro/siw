@@ -31,9 +31,9 @@
                         <img src="https://api.faviconkit.com/<%= uri.host %>/144">
                         <div class="mt-3">
                             <input type="text" name="main_title" id="main_title" class="form-control"
-                                placeholder="アプリ名・サイト名" value="<%= @content.main_title %>">
+                                placeholder="アプリ名・サイト名" value="<%= @content.main_title %>" required>
                             <input type="text" name="sub_title" id="sub_title" class="form-control"
-                                placeholder="大雑把な説明を一行で！" value="<%= @content.sub_title %>">
+                                placeholder="大雑把な説明を一行で！" value="<%= @content.sub_title %>" required>
                         </div>
                     </div>
 
@@ -49,7 +49,7 @@
                         <div class="box-center-name">
                             <p>紹介者</p>
                             <input type="text" name="user_name" id="user_name" class="form-control" placeholder="ユーザー名"
-                                value="<%= @content.user_name %>">
+                                value="<%= @content.user_name %>" required>
                         </div>
 
                         <div class="box-center-icon">
@@ -118,14 +118,14 @@
                     </div>
                     <div class="box-third m-3">
                         <textarea cols="30" rows="10" name="message" id="message" class="form-control"
-                            placeholder="メッセージをどうぞ"><%= @content.message %></textarea>
+                            placeholder="メッセージをどうぞ" required><%= @content.message %></textarea>
                     </div>
 
 
                     <div class="d-flex justify-content-end align-items-center">
                         <div class="container pull-left m-1">
                             <input type="text" name="url" id="url" class="form-control" placeholder="公式URLをどうぞ"
-                                value="<%= @content.url %>">
+                                value="<%= @content.url %>" required>
                         </div>
                     </div>
 
