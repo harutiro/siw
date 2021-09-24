@@ -1,9 +1,10 @@
 if Category.count == 0
     Category.create([
-        {name: 'ウェブアプリ'},
+        {name: 'ウェブサービス'},
         {name: 'フリーソフト'},
         {name: '有料ソフト'},
-        {name: 'ゲーム'}
+        {name: 'ゲーム'},
+        {name: 'モバイルアプリケーション'}
     ])
 end
 
@@ -190,7 +191,7 @@ if Item.count == 0
                                     しかもわかりやすいグラフィカルな画面で編集が可能です",
                         url:        "https://k-tai.watch.impress.co.jp/docs/column/teppan/1336056.html?fbclid=IwAR1pDEJF-wN7C4Yd4xTFCI17kprGJnZYLCI1TfYL-_ye_wT3h7tKpdmvUKk",
                         like:       0,
-                        category_id: 2
+                        category_id: 5
                         
                         },
                         
