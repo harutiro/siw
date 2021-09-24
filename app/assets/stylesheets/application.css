@@ -122,6 +122,10 @@ nav a:hover {
     margin-bottom: 50px;
 }
 
+.width100{
+    width: 100%;
+}
+
 /* ボックスデザイン */
 
 .box11{
@@ -137,6 +141,8 @@ nav a:hover {
     margin: 0; 
     padding: 0;
 }
+
+
 
 /*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ チェックボックス ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
 
