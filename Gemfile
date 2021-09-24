@@ -7,13 +7,10 @@ gem 'activerecord', '~> 6.1'
 gem 'bcrypt', '~> 3.1'
 gem 'cloudinary', '~> 1.18'
 gem 'dotenv', '~> 2.7'
-gem 'pg', '~> 1.2'
 gem 'rake', '~> 13.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -41,6 +38,8 @@ gem 'omniauth-rails_csrf_protection'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  gem 'sqlite3'
 end
 
 group :development do
@@ -61,6 +60,10 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
   gem 'rack_session_access'
+end
+
+group :production do
+  gem 'pg', '~> 1.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
