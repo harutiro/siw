@@ -140,6 +140,10 @@
                         </div>
                     </div>
 
+                    <input type="hidden" name="nickname" value="<%= session[:nickname]  %>">
+                    <input type="hidden" name="image_url" value="<%= session[:image_url]  %>">
+                    <input type="hidden" name="name" value="<%= session[:name]  %>">
+
                     <div class="d-flex justify-content-end align-items-center">
                         <div class="container pull-left mb-3">
                             <input type="submit" value="追加をする" class="btn btn-dark float-right">

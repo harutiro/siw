@@ -2,9 +2,6 @@ class IndexController < ApplicationController
     protect_from_forgery
 
     def top
-        @@userName = session[:name]
-        @@userImage = session[:image_url]
-        @@userNickName = session[:nickname]
         @contributions = Item.all
         @categories = Category.all
 
@@ -26,9 +23,9 @@ class IndexController < ApplicationController
             message: params[:message],
             url: params[:url],
             like: 0,
-            pass: @@userNickName,
+            pass: params[:nickname],
             category_id: params[:category],
-            user_icon: @@userImage,
+            user_icon: params[:image_url],
             # app_icon: app_icon_url,
             # img: img_url
         })
@@ -83,8 +80,8 @@ class IndexController < ApplicationController
             url: params[:url],
             like: 0,
             category_id: params[:category],
-            pass: @@nickname,
-            user_icon: @@image_url,
+            pass: params[:nickname],
+            user_icon: params[:image_url],
         })
         
         redirect_to '/'
