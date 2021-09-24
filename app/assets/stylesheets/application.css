@@ -82,11 +82,13 @@ nav a:hover {
 .right {
     float: right;
     margin-right: 8px;
+    margin-left: auto;
 }
 
 .left {
     float: left;
     margin-left: 8px;
+    margin-right: auto;
 }
 
 .marginAuto{
@@ -105,7 +107,6 @@ nav a:hover {
 
 .centerHeight {
     width: auto;
-    margin: 0 auto;
     /*上下中央揃え*/
 }
 
